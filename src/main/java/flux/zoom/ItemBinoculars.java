@@ -28,7 +28,9 @@ public class ItemBinoculars extends Item {
     
     @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
-        player.setItemInUse(itemStack, this.getMaxItemUseDuration(itemStack));
+        // Intentionally do NOT call setItemInUse().
+        // Using an item triggers vanilla "item use" behaviour which slows player movement.
+        // Zoom is handled client-side (key state + held item) in the EventHandler.
         return itemStack;
     }
     
