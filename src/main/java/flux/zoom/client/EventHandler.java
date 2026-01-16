@@ -1,5 +1,7 @@
-package tonius.zoom.client;
+package flux.zoom.client;
 
+import flux.zoom.ItemBinoculars;
+import flux.zoom.FluxZoom;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -15,8 +17,6 @@ import net.minecraftforge.common.MinecraftForge;
 
 import org.lwjgl.opengl.GL11;
 
-import tonius.zoom.ItemBinoculars;
-import tonius.zoom.Zoom;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -26,7 +26,7 @@ import cpw.mods.fml.common.gameevent.TickEvent.RenderTickEvent;
 public class EventHandler {
     
     private static final Minecraft mc = Minecraft.getMinecraft();
-    private static final ResourceLocation OVERLAY_TEXTURE = new ResourceLocation(Zoom.MODID, "textures/gui/binoculars.png");
+    private static final ResourceLocation OVERLAY_TEXTURE = new ResourceLocation(FluxZoom.MODID, "textures/gui/binoculars.png");
     
     private static final float MIN_ZOOM = 1 / 1.5F;
     private static final float MAX_ZOOM = 1 / 10.0F;

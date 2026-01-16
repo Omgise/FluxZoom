@@ -1,5 +1,7 @@
-package tonius.zoom.client.model;
+package flux.zoom.client.model;
 
+import flux.zoom.ItemBinoculars;
+import flux.zoom.FluxZoom;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -8,8 +10,6 @@ import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
-import tonius.zoom.ItemBinoculars;
-import tonius.zoom.Zoom;
 import api.player.model.ModelPlayerAPI;
 import api.player.model.ModelPlayerBase;
 
@@ -29,7 +29,7 @@ public class ModelPlayerCustom extends ModelPlayerBase {
             return;
         }
         
-        mc.renderEngine.bindTexture(new ResourceLocation(Zoom.MODID, "textures/models/binoculars.png"));
+        mc.renderEngine.bindTexture(new ResourceLocation(FluxZoom.MODID, "textures/models/binoculars.png"));
         GL11.glPushMatrix();
         GL11.glRotatef(this.modelPlayer.bipedHead.rotateAngleY * 60F, 0F, 1F, 0F);
         GL11.glRotatef(this.modelPlayer.bipedHead.rotateAngleX * 60F, 1F, 0F, 0F);

@@ -1,9 +1,9 @@
-package tonius.zoom.client;
+package flux.zoom.client;
 
+import flux.zoom.CommonProxy;
+import flux.zoom.FluxZoom;
+import flux.zoom.client.model.ModelPlayerCustom;
 import net.minecraftforge.client.MinecraftForgeClient;
-import tonius.zoom.CommonProxy;
-import tonius.zoom.Zoom;
-import tonius.zoom.client.model.ModelPlayerCustom;
 import api.player.model.ModelPlayerAPI;
 import cpw.mods.fml.common.Loader;
 
@@ -14,10 +14,10 @@ public class ClientProxy extends CommonProxy {
         super.registerHandlers();
         EventHandler.init();
         KeyHandler.init();
-        MinecraftForgeClient.registerItemRenderer(Zoom.itemBinoculars, new ItemRenderer());
+        MinecraftForgeClient.registerItemRenderer(FluxZoom.itemBinoculars, new ItemRenderer());
         
         if (Loader.isModLoaded("RenderPlayerAPI")) {
-            ModelPlayerAPI.register(Zoom.MODID, ModelPlayerCustom.class);
+            ModelPlayerAPI.register(FluxZoom.MODID, ModelPlayerCustom.class);
         }
     }
     

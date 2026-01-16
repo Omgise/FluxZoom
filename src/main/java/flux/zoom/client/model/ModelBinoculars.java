@@ -1,4 +1,4 @@
-package tonius.zoom.client.model;
+package flux.zoom.client.model;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

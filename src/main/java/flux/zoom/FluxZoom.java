@@ -1,4 +1,4 @@
-package tonius.zoom;
+package flux.zoom;
 
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
@@ -13,17 +13,17 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid = Zoom.MODID, version = Zoom.VERSION)
-public class Zoom {
+@Mod(modid = FluxZoom.MODID, version = FluxZoom.VERSION)
+public class FluxZoom {
     
-    public static final String MODID = "zoom";
+    public static final String MODID = "FluxZoom";
     public static final String PREFIX = MODID + ".";
     public static final String RESOURCE_PREFIX = MODID + ":";
     public static final String VERSION = "@VERSION@";
     
     @Instance(MODID)
-    public static Zoom instance;
-    @SidedProxy(clientSide = "tonius.zoom.client.ClientProxy", serverSide = "tonius.zoom.CommonProxy")
+    public static FluxZoom instance;
+    @SidedProxy(clientSide = "flux.zoom.client.ClientProxy", serverSide = "flux.zoom.CommonProxy")
     public static CommonProxy proxy;
     public static Logger logger;
     
@@ -32,7 +32,7 @@ public class Zoom {
     @EventHandler
     public static void preInit(FMLPreInitializationEvent evt) {
         logger = evt.getModLog();
-        logger.info("Starting Zoom");
+        logger.info("Starting FluxZoom");
         
         logger.info("Registering items");
         itemBinoculars = new ItemBinoculars();

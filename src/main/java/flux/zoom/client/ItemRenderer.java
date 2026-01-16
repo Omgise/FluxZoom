@@ -1,5 +1,6 @@
-package tonius.zoom.client;
+package flux.zoom.client;
 
+import flux.zoom.FluxZoom;
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -7,8 +8,7 @@ import net.minecraftforge.client.IItemRenderer;
 
 import org.lwjgl.opengl.GL11;
 
-import tonius.zoom.Zoom;
-import tonius.zoom.client.model.ModelBinoculars;
+import flux.zoom.client.model.ModelBinoculars;
 
 public class ItemRenderer implements IItemRenderer {
     
@@ -31,7 +31,7 @@ public class ItemRenderer implements IItemRenderer {
             GL11.glTranslatef(0.5F, 0.5F, 0.5F);
         }
         
-        mc.renderEngine.bindTexture(new ResourceLocation(Zoom.MODID, "textures/models/binoculars.png"));
+        mc.renderEngine.bindTexture(new ResourceLocation(FluxZoom.MODID, "textures/models/binoculars.png"));
         GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
         GL11.glScalef(0.09F, 0.09F, 0.09F);
         GL11.glTranslatef(0.0F, 0.0F, -1.8F);

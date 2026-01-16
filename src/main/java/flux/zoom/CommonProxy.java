@@ -1,9 +1,9 @@
-package tonius.zoom;
+package flux.zoom;
 
 public class CommonProxy {
     
     public void registerHandlers() {
-        Zoom.logger.info("Registering handlers");
+        FluxZoom.logger.info("Registering handlers");
     }
     
 }

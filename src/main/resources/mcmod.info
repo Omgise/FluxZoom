@@ -1,9 +1,9 @@
 [
 	{
-	    "modid": "zoom",
-	    "name": "Zoom",
-	    "authorList": [ "tonius11" ],
-	    "description": "Adds binoculars to Minecraft",
+	    "modid": "fluxzoom",
+	    "name": "FluxZoom",
+	    "authorList": [ "tonius11, Brandyn" ],
+	    "description": "Adds Binoculars & Zooming to Minecraft",
 	    "credits": "",
 	    "version": "${version}",
 	    "mcversion": "${mcversion}",

@@ -1,4 +1,4 @@
-package tonius.zoom;
+package flux.zoom;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import tonius.zoom.client.KeyHandler;
+import flux.zoom.client.KeyHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,8 +19,8 @@ public class ItemBinoculars extends Item {
     
     public ItemBinoculars() {
         this.setMaxStackSize(1);
-        this.setUnlocalizedName(Zoom.PREFIX + "binoculars");
-        this.setTextureName(Zoom.RESOURCE_PREFIX + "binoculars");
+        this.setUnlocalizedName(FluxZoom.PREFIX + "binoculars");
+        this.setTextureName(FluxZoom.RESOURCE_PREFIX + "binoculars");
         this.setCreativeTab(CreativeTabs.tabTools);
         
         GameRegistry.registerItem(this, "binoculars");
@@ -40,9 +40,9 @@ public class ItemBinoculars extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean bool) {
-        list.add(StatCollector.translateToLocal("item.zoom.binoculars.desc.1"));
+        list.add(StatCollector.translateToLocal("item.FluxZoom.binoculars.desc.1"));
         if (KeyHandler.keyZoom.getKeyCode() != 0) {
-            list.add(StatCollector.translateToLocalFormatted("item.zoom.binoculars.desc.2", EnumChatFormatting.AQUA + GameSettings.getKeyDisplayString(KeyHandler.keyZoom.getKeyCode()) + EnumChatFormatting.GRAY));
+            list.add(StatCollector.translateToLocalFormatted("item.FluxZoom.binoculars.desc.2", EnumChatFormatting.AQUA + GameSettings.getKeyDisplayString(KeyHandler.keyZoom.getKeyCode()) + EnumChatFormatting.GRAY));
         }
     }
 }

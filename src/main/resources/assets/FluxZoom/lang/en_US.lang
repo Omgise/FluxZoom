@@ -1,0 +1,5 @@
+item.FluxZoom.binoculars.name=Binoculars
+item.FluxZoom.binoculars.desc.1=Scroll to zoom.
+item.FluxZoom.binoculars.desc.2=Hold %s to use from anywhere in inventory.
+
+FluxZoom.keybind.zoom=Use Binoculars

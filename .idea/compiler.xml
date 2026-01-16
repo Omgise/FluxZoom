@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.6" />
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="outRefMapFile" value="E:\dev\Zoom\build\tmp\compileJava/mixins.riftflux.refmap.json" />
+        <option name="outSrgFile" value="E:\dev\Zoom\build\tmp\compileJava/outSrg.srg" />
+        <option name="reobfSrgFile" value="C:\Users\brandyn\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1614-1.7.10\srgs\mcp-srg.srg" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.LegacyModdingMC.UniMixins/unimixins-all-1.7.10/0.1.14/a7c92ff207faac7ebc822d72dfb4993f6d618b65/unimixins-all-1.7.10-0.1.14-dev.jar" />
+        </processorPath>
+        <module name="Zoom.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8" />
   </component>
 </project>

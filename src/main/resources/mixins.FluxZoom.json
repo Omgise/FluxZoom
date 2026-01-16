@@ -1,0 +1,9 @@
+{
+  "required": false,
+  "minVersion": "0.7",
+ // "package": "flux.zoom.client.mixin",
+  "refmap": "mixins.zoom.refmap.json",
+  "mixins": [],
+  "client": [],
+  "server": []
+}
