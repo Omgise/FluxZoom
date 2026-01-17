@@ -1,6 +1,7 @@
 package flux.zoom.client.zume;
 
 import flux.zoom.ItemBinoculars;
+import flux.zoom.ItemSpyglass;
 import flux.zoom.client.KeyHandler;
 import flux.zoom.client.mixin.EntityRendererAccessor;
 import net.minecraft.client.Minecraft;
@@ -20,14 +21,14 @@ public final class ZumeIntegration implements IZumeImplementation {
             return false;
         }
 
-        // Keybind zoom: only if binoculars exist somewhere in inventory.
-        if (KeyHandler.keyZoom != null && KeyHandler.keyZoom.getIsKeyPressed() && hasBinocularsInInventory()) {
+        // Keybind zoom: only if binoculars/spyglass exist somewhere in inventory.
+        if (KeyHandler.keyZoom != null && KeyHandler.keyZoom.getIsKeyPressed() && hasZoomItemInInventory()) {
             return true;
         }
 
-        // Right-click zoom: only if holding binoculars and holding use-item.
+        // Right-click zoom: only if holding binoculars/spyglass and holding use-item.
         final ItemStack held = mc.thePlayer.getHeldItem();
-        if (held != null && held.getItem() instanceof ItemBinoculars) {
+        if (held != null && isZoomItem(held)) {
             return mc.gameSettings.keyBindUseItem.getIsKeyPressed();
         }
 
@@ -63,12 +64,16 @@ public final class ZumeIntegration implements IZumeImplementation {
         }
     }
 
-    private boolean hasBinocularsInInventory() {
+    private boolean hasZoomItemInInventory() {
         for (ItemStack stack : mc.thePlayer.inventory.mainInventory) {
-            if (stack != null && stack.getItem() instanceof ItemBinoculars) {
+            if (stack != null && isZoomItem(stack)) {
                 return true;
             }
         }
         return false;
+    }
+
+    private static boolean isZoomItem(ItemStack stack) {
+        return stack != null && (stack.getItem() instanceof ItemBinoculars || stack.getItem() instanceof ItemSpyglass);
     }
 }

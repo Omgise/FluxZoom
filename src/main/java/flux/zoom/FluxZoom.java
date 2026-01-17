@@ -28,6 +28,7 @@ public class FluxZoom {
     public static Logger logger;
     
     public static ItemBinoculars itemBinoculars;
+    public static ItemSpyglass itemSpyglass;
     
     @EventHandler
     public static void preInit(FMLPreInitializationEvent evt) {
@@ -36,6 +37,7 @@ public class FluxZoom {
         
         logger.info("Registering items");
         itemBinoculars = new ItemBinoculars();
+        itemSpyglass = new ItemSpyglass();
     }
     
     @EventHandler
@@ -47,6 +49,9 @@ public class FluxZoom {
     public static void postInit(FMLPostInitializationEvent evt) {
         logger.info("Registering recipes");
         GameRegistry.addRecipe(new ShapedOreRecipe(itemBinoculars, new Object[] { "B B", "LEL", "P P", 'B', "blockGlassColorless", 'L', "ingotIron", 'E', "stickWood", 'P', "paneGlassColorless" }));
+
+        // Simple spyglass recipe (kept intentionally close to vanilla materials).
+        GameRegistry.addRecipe(new ShapedOreRecipe(itemSpyglass, new Object[] { " G ", " I ", " S ", 'G', "paneGlassColorless", 'I', "ingotIron", 'S', "stickWood" }));
     }
     
 }
