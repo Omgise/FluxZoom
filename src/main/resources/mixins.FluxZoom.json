@@ -1,9 +1,12 @@
 {
   "required": false,
   "minVersion": "0.7",
- // "package": "flux.zoom.client.mixin",
-  "refmap": "mixins.zoom.refmap.json",
+  "package": "flux.zoom.client.mixin",
+  "refmap": "mixins.FluxZoom.refmap.json",
   "mixins": [],
-  "client": [],
+  "client": [
+    "EntityRendererAccessor",
+    "EntityRendererMixin"
+  ],
   "server": []
 }

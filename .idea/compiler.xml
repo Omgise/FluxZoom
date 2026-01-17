@@ -4,7 +4,7 @@
     <annotationProcessing>
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
-        <option name="outRefMapFile" value="E:\dev\Zoom\build\tmp\compileJava/mixins.riftflux.refmap.json" />
+        <option name="outRefMapFile" value="E:\dev\Zoom\build\tmp\compileJava/mixins.FluxZoom.refmap.json" />
         <option name="outSrgFile" value="E:\dev\Zoom\build\tmp\compileJava/outSrg.srg" />
         <option name="reobfSrgFile" value="C:\Users\brandyn\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1614-1.7.10\srgs\mcp-srg.srg" />
         <processorPath useClasspath="false">
