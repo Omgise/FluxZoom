@@ -1,4 +1,3 @@
-Introducing:
 # FluxZoom 
 
 Adds a Spyglass & Binoculars to Zoom in Minecraft 1.7.10!
