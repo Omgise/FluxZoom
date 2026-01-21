@@ -45,10 +45,10 @@ public class ItemSpyglass extends Item {
     @SideOnly(Side.CLIENT)
     @SuppressWarnings({ "rawtypes", "unchecked" })
     public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean advanced) {
-        list.add(StatCollector.translateToLocal("item.FluxZoom.spyglass.desc.1"));
+        list.add(StatCollector.translateToLocal("item.fluxzoom.spyglass.desc.1"));
         if (KeyHandler.keyZoom != null && KeyHandler.keyZoom.getKeyCode() != 0) {
             list.add(StatCollector.translateToLocalFormatted(
-                    "item.FluxZoom.spyglass.desc.2",
+                    "item.fluxzoom.spyglass.desc.2",
                     EnumChatFormatting.AQUA + GameSettings.getKeyDisplayString(KeyHandler.keyZoom.getKeyCode())
                             + EnumChatFormatting.GRAY));
         }

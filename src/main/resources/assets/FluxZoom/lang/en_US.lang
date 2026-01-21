@@ -1,9 +1,9 @@
-item.FluxZoom.binoculars.name=Binoculars
-item.FluxZoom.binoculars.desc.1=Scroll to zoom.
-item.FluxZoom.binoculars.desc.2=Hold %s to use from anywhere in inventory.
+item.fluxzoom.binoculars.name=Binoculars
+item.fluxzoom.binoculars.desc.1=Scroll to zoom.
+item.fluxzoom.binoculars.desc.2=Hold %s to use from anywhere in inventory.
 
-item.FluxZoom.spyglass.name=Spyglass
-item.FluxZoom.spyglass.desc.1=Scroll to zoom.
-item.FluxZoom.spyglass.desc.2=Hold %s to use from anywhere in inventory.
+item.fluxzoom.spyglass.name=Spyglass
+item.fluxzoom.spyglass.desc.1=Scroll to zoom.
+item.fluxzoom.spyglass.desc.2=Hold %s to use from anywhere in inventory.
 
 FluxZoom.keybind.zoom=Use Binoculars

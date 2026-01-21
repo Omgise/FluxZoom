@@ -16,7 +16,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @Mod(modid = FluxZoom.MODID, version = FluxZoom.VERSION)
 public class FluxZoom {
     
-    public static final String MODID = "FluxZoom";
+    public static final String MODID = "fluxzoom";
     public static final String PREFIX = MODID + ".";
     public static final String RESOURCE_PREFIX = MODID + ":";
     public static final String VERSION = "@VERSION@";

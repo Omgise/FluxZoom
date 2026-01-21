@@ -42,9 +42,9 @@ public class ItemBinoculars extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean bool) {
-        list.add(StatCollector.translateToLocal("item.FluxZoom.binoculars.desc.1"));
+        list.add(StatCollector.translateToLocal("item.fluxzoom.binoculars.desc.1"));
         if (KeyHandler.keyZoom.getKeyCode() != 0) {
-            list.add(StatCollector.translateToLocalFormatted("item.FluxZoom.binoculars.desc.2", EnumChatFormatting.AQUA + GameSettings.getKeyDisplayString(KeyHandler.keyZoom.getKeyCode()) + EnumChatFormatting.GRAY));
+            list.add(StatCollector.translateToLocalFormatted("item.fluxzoom.binoculars.desc.2", EnumChatFormatting.AQUA + GameSettings.getKeyDisplayString(KeyHandler.keyZoom.getKeyCode()) + EnumChatFormatting.GRAY));
         }
     }
 }

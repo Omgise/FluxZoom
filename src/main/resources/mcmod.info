@@ -2,12 +2,12 @@
 	{
 	    "modid": "fluxzoom",
 	    "name": "FluxZoom",
-	    "authorList": [ "tonius11, Brandyn" ],
+	    "authorList": [ "tonius11, Brandyn, Nolij" ],
 	    "description": "Adds Binoculars & Zooming to Minecraft",
 	    "credits": "",
 	    "version": "${version}",
 	    "mcversion": "${mcversion}",
 	    "logoFile": "",
-	    "url": ""
+	    "url": "https://github.com/brandyyn/FluxZoom"
 	}
 ]
